@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Editor</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(pexels-pixabay-159825.jpg); background-repeat: no-repeat;background-size: cover;">
+	<h1><b><u>JS Code Editor to sort an array using user defined function</u></b> <button class="openbtn" onclick="openNav()">☰ Some basics</button>  
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+  Using sort() function helps to sort the array. It sorts strings in alphabetical order.
+</marquee>
+</div></h1>
+  
+
+	<div class="tbox">
+		Sort Integers : 
+		<p> Sort - 2,5,8,1,4</p>
+  <button type="button" class="btn btn-primary" onclick='document.getElementById("jsCode").
+  innerHTML=` <!DOCTYPE html>
+<head>
+</head>
+<body style="background-color:yellow;text-align:center;">
+<h2 style="font-family:cursive;color:green;">JavaScript Array Sort For Integer Arrays</h2>
+
+<p>Lets sort decimal values 2,5,8,1,4</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+var arr = [2, 5, 8, 1, 4]
+document.getElementById("demo").innerHTML = arr;
+
+function myFunction() {
+  arr.sort();
+  document.getElementById("demo").innerHTML = arr;
+}
+</script>
+</body>
+</html>`'>
+Implement this </button></div>
+<div class="tbox">
+		Sort Decimal : 
+		<p>Sort - 2.5,5.5,8.5,1.5,4.5 <br></p>
+  <button type="button" class="btn btn-primary" onclick='document.getElementById("jsCode").
+  innerHTML=` <!DOCTYPE html>
+<head>
+</head>
+<body style="background-color:orange;text-align:center;">
+<h2 style="font-family:cursive;color:red;">JavaScript Array Sort For Decimal Numbers</h2>
+
+<p>Lets sort decimal values 2.5,5.5,8.5,1.5,4.5</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+var arr = [2.5, 5.5, 8.5, 1.5, 4.5]
+document.getElementById("demo").innerHTML = arr;
+
+function myFunction() {
+  arr.sort();
+  document.getElementById("demo").innerHTML = arr;
+}
+</script>
+</body>
+</html>`'>
+Implement this </button></div>
+<div class="tbox">
+		Sort Strings: 
+		<p> Sort - Banana, Orange, Apple, Mango</p>
+  <button type="button" class="btn btn-primary" onclick='document.getElementById("jsCode").
+  innerHTML=`<!DOCTYPE html>
+<html>
+<body style="background-color:pink;text-align:center;" >
+
+<h2 style="font-family:cursive;color:blue;">JavaScript Array Sort For Strings</h2>
+
+<p>Lets sort Banana,Orange,Apple,Mango alphlabetically</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.sort();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>`'>
+Implement this </button></div>
+<div class="tbox2">
+    Sort Yourself : 
+    <p> Create function and sort</p>
+  <button type="button" class="btn btn-primary" onclick='document.getElementById("jsCode").
+  innerHTML=` <!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <body style="background-color:white;">
+  
+  </body>
+  </html`'>
+Implement this </button></div>
+
+
+<div class="container">
+<div class="code">
+  <textarea id="jsCode" style="height: 96%">
+<!DOCTYPE html>
+<head>
+</head>
+<body style="background-color:hotpink;text-align:center;font-family: cursive;">
+<h1 style="color: white;">Lets start sorting using javascript!!</h1>
+<h2 style="color: white;">Choose from the above 3 types and then make your own function to sort</h2>
+<p style="color: white;">Then implement to see effect</p>
+</body>
+</html>
+</textarea>  
+<button type="button" style="background-color: yellow; " class="btn btn-success" onclick="showPreview()">
+Try this out
+</button>    
+</div>
+
+<div class="preview">
+  <iframe id="preview-window"></iframe>
+</div>
+</div>
+
+
+
+
+<script>
+  function showPreview(){
+  var jsCode = ""+document.getElementById("jsCode").value+"";
+  var frame = document.getElementById("preview-window").contentWindow.document;
+  frame.open();
+  frame.write(jsCode);
+  frame.close();
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
